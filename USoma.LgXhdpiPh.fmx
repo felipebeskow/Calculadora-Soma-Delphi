@@ -1,0 +1,62 @@
+inherited TabbedwithNavigationForm_LgXhdpiPh: TTabbedwithNavigationForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    Sizes = (
+      450s
+      646s
+      450s
+      646s
+      450s
+      646s)
+    inherited TabA: TTabItem
+      Size.Width = 150.000000000000000000
+      ExplicitSize.cx = 101.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited TabControl2: TTabControl
+        Size.Width = 450.000000000000000000
+        Size.Height = 598.000000000000000000
+      end
+      inherited ToolBar1: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited lblTitulo: TLabel
+          Size.Width = 450.000000000000000000
+        end
+        inherited btnNext: TSpeedButton
+          Position.X = 385.000000000000000000
+        end
+      end
+    end
+    inherited TabB: TTabItem
+      Size.Width = 150.000000000000000000
+      ExplicitSize.cx = 102.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ToolBar3: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited lblTitulo1: TLabel
+          Size.Width = 450.000000000000000000
+        end
+        inherited btnNext1: TSpeedButton
+          Position.X = 385.000000000000000000
+        end
+      end
+    end
+    inherited TabResult: TTabItem
+      Size.Width = 150.000000000000000000
+      ExplicitSize.cx = 101.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ToolBar4: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited lblTitulo2: TLabel
+          Size.Width = 450.000000000000000000
+        end
+      end
+      inherited lblResult: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+end

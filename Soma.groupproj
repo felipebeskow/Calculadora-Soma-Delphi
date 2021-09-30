@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{036180DA-B814-4BE3-9770-C77164E67640}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PSoma.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PSoma">
+        <MSBuild Projects="PSoma.dproj"/>
+    </Target>
+    <Target Name="PSoma:Clean">
+        <MSBuild Projects="PSoma.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PSoma:Make">
+        <MSBuild Projects="PSoma.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PSoma"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PSoma:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PSoma:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
